@@ -14,6 +14,10 @@ int rand_Board_Size() {
     return rand() % 14 + 3;  // retourner un nombre aléatoire entre 3 et 16
 }
 
+int case_fence(){
+    return rand() % 2;
+}
+
 int main() {
     srand(time(NULL));  // initialiser la graine pour rand()
 
@@ -32,6 +36,9 @@ int main() {
     }
     // afficher le tableau
     for (int i = 0; i < size_x; i++) {
+        if (case_fence() == 1){  // utiliser la fonction case_fence() pour déterminer si une barrière doit être affichée
+            printf("%c", '|');
+        }
         for (int j = 0; j < size_y; j++) {
             if (create_Board[i][j] == 0){
                 Color(33,40); // jaune sur fond noir
@@ -48,5 +55,6 @@ int main() {
     printf("\n");
     printf("Rows size : %d\n", size_x);
     printf("Columns size : %d\n", size_y);
+    printf("Fence : %d\n", case_fence());  // afficher si une barrière a été générée ou non
     return 0;
 }
