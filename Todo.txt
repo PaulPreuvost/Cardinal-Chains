@@ -1,0 +1,19 @@
+Fonctions à faire en C :
+
+	verif possible (solution UNIQUE) ?
+	verif placement
+	victoire
+	créer grille
+	sélection niveau (simple, moyen, difficile) ?
+	Affichage
+	couleurs 
+	niveau suivant
+	Déplacement
+	relancer
+	condition sortie du jeux
+	mode random
+	comment déplacer les pions
+	gérer la mémoire (ram) 
+	optimiser le code 
+	diviser le code en plusieurs fichier et module
+	Sauvegarde 
